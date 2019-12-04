@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-y: hidden;
+}
+.slider {
+  font-family: sans-serif;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+section {
+  border-right: 1px solid white;
+  padding: 1rem;
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+}
+

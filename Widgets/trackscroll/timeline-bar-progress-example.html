@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Aspect ratio test</title>
+<script src="css-js/track-scroll-mobile.js" type="text/javascript"></script>
+<style type="text/css">
+	body {
+		margin:0;
+		background-color:rgba(222,40,21,1.00);
+	}
+
+	.container {
+		position:relative;
+		width:4096px;
+		height:100vh;
+	}
+	#bar1, #bar2, #bar3, #bar4, #bar5 {
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:100px;
+		height:50px;
+		background-color:yellow;
+		transition:all 0.4s ease-in-out;
+		z-index:100;
+	}
+	.screen {
+		position:relative;
+		/*width:100vw;*/
+		width:1024px;
+		height:100vh;
+		margin:0;
+		padding:0;
+		float:left;
+		clear:none;
+		z-index:1;
+	}
+	.red {background-color:rgba(220,45,9,1.00);}
+	.red-orange {background-color:rgba(230,105,12,1.00);}
+	.yellow {background-color:rgba(220,189,9,1.00);}
+	.clearfix:after {
+		content:'';
+		height:0;
+		visibility:hidden;
+		display:block;
+		clear:both;
+	}
+	
+#count {
+  position:fixed;
+  top:50px;
+  right:50px;
+  z-index:500;
+  background-color:#fff;
+  border:1px solid #000;
+  font-size:12px;
+  padding:5px;
+  z-index:5000;
+}
+	
+</style>
+</head>
+
+<body>
+<div id="count"></div>
+<div class="container">
+  <div id="bar1"></div>
+  <div id="bar2"></div>
+  <div id="bar3"></div>
+  <div id="bar4"></div>
+  <div id="bar5"></div>
+  <div class="screen-01" id="screen-01"></div>
+	
+  <div class="screen red" id="screen-02"></div>
+	
+  <div class="screen red-orange" id="screen-03"></div>
+	
+  <div class="screen yellow" id="screen-04"></div>
+</div>
+</body>
+</html>

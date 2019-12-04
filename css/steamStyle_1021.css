@@ -1,0 +1,59 @@
+@charset "UTF-8";
+html,body {
+    height:100%;
+}
+body {
+  overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+}
+.navBar{
+	display: fixed;
+	min-width: 100vw;
+	height: 12vh;
+	margin: 0;
+	padding: 0;
+	background-color: #BCAE85;
+	/*border: 1px solid green;*/
+}
+.gearsMenu{
+	position: relative;
+	width: 10vw;
+	height: auto;
+	margin: 10px 0 0 10px;
+}
+
+.timeline{
+	width: 90%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+.slider {
+  font-family: sans-serif;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+	margin: 0 0 0 0;
+	padding: 0;
+	/*border: 1px solid blue;*/
+	height: 88vh;
+}
+section {
+	min-width: 100vw;
+	padding: 1rem;
+	margin: 0;
+	scroll-snap-align: center;
+	text-align: center;
+	position: relative;
+	/*border: 1px solid red;*/
+	background-color: #F7EEDC;
+}
+.home{
+	
+}
+

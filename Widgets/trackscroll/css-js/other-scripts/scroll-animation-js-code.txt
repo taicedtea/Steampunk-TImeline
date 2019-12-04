@@ -1,0 +1,114 @@
+//////////////////////////////////////////////////////////
+PASTE THIS INTO THE HEAD OF YOUR WEB PAGE
+/////////////////////////////////////////////////////////
+
+
+<script src="control-elements-w-scroll.js" type="text/javascript"></script>
+
+
+
+
+
+//////////////////////////////////////////////////////////
+YOU MUST ADD THIS CSS RULE TO YOUR STYLES
+KEEP THE COUNT BOX VISIBLE WHILE YOU DEVELOP
+MOVE THE COUNT BOX OFF THE SCREEN WHEN YOU ARE DONE
+DO NOT REMOVE OR THE ANIMATION WILL NOT WORK
+/////////////////////////////////////////////////////////
+
+
+#count {
+  position:fixed;
+  top:20px;
+  right:50px;
+  z-index:500;
+  background-color:#fff;
+  border:1px solid #000;
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////
+PASTE THIS INTO THE BODY OF THE DOCUMENT
+BEST TO PLACE RIGHT AFTER THE OPENING BODY TAG
+/////////////////////////////////////////////////////////
+
+
+<div id="count"></div>
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+CREATE A NEW JAVASCRIPT DOC IN DREAMWEAVER
+PASTE THE CODE BELOW INTO THE NEW JS-DOC
+NAME THE NEW JS-DOC "control-elements-w-scroll.js"
+PLACE THIS DOC IN THE ROOT LEVEL OF YOUR STORY PROJECT
+/////////////////////////////////////////////////////////
+
+
+// JavaScript Document
+
+function myFunction() {
+  "use strict";
+  var element1 = document.getElementById("ids-name");
+  var desiredPosition1 = 500;
+  
+  var counter = document.getElementById("count");
+  counter.innerHTML = 'pageyOffset: ' + window.pageYOffset;
+  if (window.pageYOffset > desiredPosition1) {
+    element1.style.cssText += "property:property value;";
+  } else {
+    element1.style.cssText += "property:property value;";
+
+  }
+  
+  
+
+  
+  
+  
+}
+window.onscroll = myFunction;
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+FIX!
+PLACE THIS SCRIPT BEFORE CLOSING HEAD ELEMENT
+////////////////////////////////////////////////////////////
+
+
+
+<script type="text/javascript">
+  function popup(mylink, windowname) { 
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href; 
+    window.open(href, windowname, 'width=1200,height=700,scrollbars=yes,left=300,toolbar=yes,menubar=yes'); 
+    return false; 
+  }
+</script>
+
+
+
+/////////////////////////////////////////////////////////////
+FIX!
+THIS IS A TEXT BASED TRIGGER TO OPEN A NEW WINDOW
+YOU CAN CHANGE TO AN IMAGE IF YOU PREFER
+////////////////////////////////////////////////////////////
+
+<a HREF="index.html" onClick="return popup(this, 'notes')">Start the story</a>

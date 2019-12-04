@@ -1,0 +1,6 @@
+<!--Scripts for the horz and vert scrolling-->
+
+<script src="run_slide.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.addEvent('domready',function() { new SmoothScroll({ duration: 500 }); });
+</script>

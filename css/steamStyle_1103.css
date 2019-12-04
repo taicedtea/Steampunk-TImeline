@@ -1,0 +1,591 @@
+@charset "UTF-8";
+html,body {
+    height:100%;
+}
+body {
+	position: relative;
+  overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: "Mr Darcy";
+    src: url("../Fonts/insigne - Mr Darcy Regular.otf") format("opentype");
+}
+section {
+	min-width: 100vw;
+	padding: 0;
+	margin: 0;
+	scroll-snap-align: center;
+	text-align: center;
+	position: relative;
+	/*border: 1px solid red;*/
+	background-color: rgba(247, 238, 220, 1);
+}
+.slider {
+	font-family: sans-serif;
+	-ms-scroll-snap-type: x mandatory;
+	scroll-snap-type: x mandatory;
+	display: flex;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+	margin: 0 0 0 0;
+	padding: 0;
+	/*border: 1px solid blue;*/
+	height: 90vh;
+}
+					/* ////// MOVING BAR \\\\\\\ */
+#bar1, #bar2, #bar3, #bar4, #bar5 {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100px;
+    height:50px;
+    background-color:yellow;
+    transition:all 0.4s ease-in-out;
+    z-index:100;
+}
+.screen {
+    position:relative;
+    /*width:100vw;*/
+    width:1024px;
+    height:100vh;
+    margin:0;
+    padding:0;
+    float:left;
+    clear:none;
+    z-index:1;
+}
+.clearfix:after {
+    content:'';
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+#count {
+    position:fixed;
+    top:50px;
+    right:50px;
+    z-index:500;
+    background-color:#fff;
+    border:1px solid #000;
+    font-size:12px;
+    padding:5px;
+    z-index:5000;
+}
+.navBar{
+	display: fixed;
+	min-width: 100vw;
+	height: 10vh;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(188, 174, 133, 0.55);
+	/*border: 1px solid green;*/
+}
+.gearsMenu{
+	position: fixed;
+	width: 9vw;
+	height: auto;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+.years{
+	position: fixed;
+	top: 15px;
+	left: 100px;
+	width: 80%;
+	margin: auto;
+	padding: 0 0 0 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-family: Bakerville;
+	font-weight: 500;
+	font-size: 2.2em;
+}
+.years a{
+	text-decoration: none;
+	color: rgba(246,246,246,1.00);
+}
+.lines{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	top: 55px;
+}
+.sectionTitle{
+	position: absolute;
+	top: 20px;
+	left: 60px;
+	font-family: Bakerville;
+	font-size: 3em;
+	font-style: italic;
+	color: rgb(50, 50, 50);
+	padding: 0;
+	margin: 0;
+}
+.lightTitle{
+	position: absolute;
+	top: 15px;
+	left: 60px;
+	font-family: Bakerville;
+	font-size: 3em;
+	font-style: italic;
+	color: rgb(218, 218, 218);
+	padding: 0;
+	margin: 0;
+}
+					/* ////////// HOMEPAGE \\\\\\\\\\\ */
+.home h1{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	margin: 0;
+	padding: 0;
+	font-family: "Mr Darcy", Bakerville;
+	font-size: 4em;
+	color:rgba(50,50,50,1.00)
+}
+.homeSlider{
+	position: absolute;
+	top: 100px;
+	left: 15px;
+	width: 55vw;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.homeSlider img{
+	margin: 0;
+	padding: 0;
+}
+.slideOver{
+	position: absolute;
+	left: -300px;
+	top: 10px;
+	width: 30vw;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+.steamEngine{
+	position: relative;
+	right: 100px;
+	top: 12px;
+}
+.description{
+    position: absolute;
+    left: 600px;
+	bottom: 150px;
+    width: 30vw;
+    height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: Bakerville;
+	font-size: 1.1em;
+	text-align: left;
+	color: rgb(50, 50, 50);
+}
+.description > h2{
+	font-size: 2em;
+	font-style: italic;
+}
+.description > p{
+	position: relative;
+	left: 30px;
+	bottom: 20px;
+}
+.moreInfo{
+	position: absolute;
+	left: 680px;
+	bottom: 20px;
+	margin: 0;
+	padding: 0;
+	color: rgb(50, 50, 50);
+}
+.moreInfo > p{
+	position: relative;
+	bottom: 10px;
+	font-family: Bakerville;
+	font-size: 1em;
+	font-style: italic;
+	clear: both;
+}
+					/* ////////// BEGINNING 1800S \\\\\\\\\\\ */
+.beginLocation{
+	position: absolute;
+	top: -20px;
+	left: 235px;
+	font-size: 1.2em;
+	color: rgb(80,80,80);
+}
+.beginTitle{
+	position: absolute;
+	top: 15px;
+	left: -80px;
+	font-family: Bakerville;
+	font-size: 3em;
+	font-style: italic;
+	color: rgb(50, 50, 50);
+	padding: 0;
+	margin: 0;
+}
+.beginIntro{
+	position: absolute;
+	width: 300px;
+	top: 10px;
+	left: 570px;
+	font-family: Bakerville;
+	font-size: 1.2em;
+	text-align: left;
+	font-weight: 500;
+	color: rgb(50, 50, 50);
+}
+.beginSlide{
+	position: relative;
+	width: 95vw;
+	height: auto;
+	margin: auto;
+	top: 140px;
+	/* border: solid 1px crimson; */
+}
+.beginGroup{
+	overflow: hidden;
+}
+.beginImg{
+	width: 50vw;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+.beginName{
+	position: absolute;
+	top: -15px;
+	left: 560px;
+	text-align: left;
+	font-family: Bakerville;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: rgb(50, 50, 50);
+}.beginAuthor{
+	position: absolute;
+	top: 30px;
+	left: 560px;
+	text-align: left;
+	font-family: Bakerville;
+	font-weight: 300;
+	font-style: italic;
+	 color: rgb(50, 50, 50);
+}
+.beginDescription{
+	position: absolute;
+	width: 400px;
+	height: auto;
+	font-family: Bakerville;
+	font-size: 0.9em;
+	font-weight: 250;
+	color: rgb(50, 50, 50);
+	left: 560px;
+	top: 70px;
+	vertical-align: middle;
+	text-align: left;
+	line-height: 20px;
+	/* border: solid 1px blue; */
+}
+.swipe{
+	position: relative;
+	margin: auto;
+	bottom: -145px;
+	font-family: Bakerville;
+	font-size: 1em;
+	font-style: italic;
+	color: rgba(100,100,100,1);
+}
+					/* ////////// 1900s \\\\\\\\\\\ */
+.nineLocation{
+	position: absolute;
+	top: -20px;
+	left: 410px;
+	font-size: 1.2em;
+	color: rgb(218,218,218);
+}
+.bigGear{
+	position: absolute;
+	width: 160px;
+	height: auto;
+	bottom: 300px;
+	left: -75px;
+}
+.one900{
+	background-color: rgb(88, 85, 77);
+}
+.nineIntro{
+	position: absolute;
+	width: 380px;
+	font-family: Bakerville;
+	font-size: 0.95em;
+	text-align: left;
+	top: 25px;
+	left: 300px;
+	margin: 0;
+	padding: 0;
+	color: rgb(218, 218, 218);
+	font-weight: 300;
+}
+.nineDescription{
+	position: absolute;
+	width: 80vh;
+	height: 70vh;
+}
+.nineVid{
+	position: relative;
+	width: 95vw;
+	height: auto;
+	top: 85px;
+}
+.nineCaption{
+	position: relative;
+	width: 500px;
+	font-family: Bakerville;
+	margin: auto;
+	padding: 0;
+	line-height: 10px;
+	top: 75px;
+	color: rgb(218, 218, 218);
+	font-weight: 300;
+}
+.nineName{
+	font-weight: 500;
+	color: rgb(218, 218, 218);
+}
+.nineAuthor{
+	font-weight: 300;
+	font-style: italic;
+	color: rgb(218, 218, 218);
+}
+					/* ////////// 2000s \\\\\\\\\\\ */
+.twoLocation{
+	position: absolute;
+	top: -20px;
+	left: 580px;
+	font-size: 1.2em;
+	color: rgb(80,80,80);
+}
+.twoDescription{
+	position: absolute;
+	width: 400px;
+	height: auto;
+	font-family: Bakerville;
+	font-size: 1.3em;
+	font-weight: 200;
+	color: black;
+	left: 60px;
+	top: 130px;
+	vertical-align: middle;
+	text-align: left;
+	line-height: 20px;
+}
+.twoGrid{
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(3, 150px);
+	grid-template-rows: repeat(3, 150px);
+	grid-gap: 5px 5px;
+	top: 120px;
+	left: 500px;
+	margin: 0;
+	padding: 0;
+}
+.twoGrid img{
+	width: 150px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.twoInfo{
+	position: absolute;
+	right: 200px;
+	bottom: 50px;
+	font-family: Bakerville;
+	font-size: 1em;
+	font-weight: 300;
+	font-style: italic;
+
+}
+					/* ////////// FUTURE \\\\\\\\\\\ */
+.futureLocation{
+	position: absolute;
+	top: -20px;
+	left: 760px;
+	font-size: 1.2em;
+	color: rgb(80,80,80);
+}
+.extra{
+	position: absolute;
+	width: 120px;
+	height: auto;
+	font-family: Bakerville;
+	font-size: 0.95em;
+	font-style: italic;
+	bottom: 60px;
+	right: 15px;
+}
+.arrows{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	right: 15px;
+	top: 20px;
+	justify-content: space-between;
+
+}
+.descriptionFuture{
+    position: absolute;
+    left: 600px;
+	top: 80px;
+    width: 30vw;
+    height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: Bakerville;
+	font-size: 1.1em;
+	text-align: left;
+	color: rgb(50, 50, 50);
+}
+.descriptionFuture > h2{
+	font-size: 2em;
+	font-style: italic;
+}
+.descriptionFuture > p{
+	position: relative;
+	left: 30px;
+	bottom: 20px;
+}
+					/* ////////// FOOTER \\\\\\\\\\\ */
+.footer {
+	min-width: 40vw;
+	height: 90vh;
+	padding: 0;
+	margin: 0;
+	scroll-snap-align: center;
+	text-align: center;
+	position: relative;
+	background-color: rgba(188, 174, 133, 0.55);
+}
+.footerTitle{
+	position: relative;
+	margin: auto;
+	top: 15px;
+	font-family: Bakerville;
+	font-weight: 500;
+	font-size: 2.5em;
+	font-style: italic;
+	color: rgb(55,55,55);
+}
+.footerDescription{
+	position: relative;
+	margin: auto;
+	width: 300px;
+	top: 25px;
+	font-family: Bakerville;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgb(55,55,55);
+}
+.siteMap{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 40px;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.siteMap a{
+	color: black;
+	text-decoration: none;
+	font-family: Baskerville;
+	font-size: 2em;
+}
+.sitesHeader{
+	position: relative;
+	margin: auto;
+	top: 60px;
+	width: 300px;
+	font-family: Bakerville;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+.moreSites{
+	position: relative;
+	display: flex;
+	padding: 0 0 0 0;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-evenly;
+	top: 80px;
+}
+.moreSites a{
+	color: rgb(30,30,30);
+}
+.me{
+	position: relative;
+	width:auto;
+	height: auto;
+	margin: auto;
+	top: 100px;
+	font-family: Bakerville;
+	font-size: 2em;
+	font-weight: 500;
+}
+.me a{
+	text-decoration: none;
+	color: black;
+	animation:blinkingText 4s infinite;
+	transition:all 4s ease-in-out;
+}
+@keyframes blinkingText{
+	0%{     color: #000;    }
+	50%{    color: rgba(0, 0, 0, 0.30); }
+	100%{   color: #000;    }
+}
+.school{
+	position: relative;
+	width:100px;
+	height: auto;
+	top: 120px;
+	margin: auto;
+}
+.class{
+	position: relative;
+	width:auto;
+	top: 130px;
+	height: auto;
+	margin: auto;
+	font-family: Bakerville;
+	font-size: 1em;
+	font-weight: 200;
+	font-style: italic;
+	padding: 4px;
+	color: rgb(55,55,55);
+}
+.social{
+	position: relative;
+	width: auto;
+	top: 150px;
+	margin: auto;
+	padding: 0;
+}
+.social img{
+	width: 30px;
+	height: auto;
+	margin:0;
+	padding: 0;
+}
+/*.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}*/

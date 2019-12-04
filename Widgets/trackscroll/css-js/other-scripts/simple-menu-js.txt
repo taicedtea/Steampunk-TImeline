@@ -1,0 +1,222 @@
+
+#mobile-nav-top {
+	position:relative;
+	float:left;
+	clear:both;
+	width:100%;
+	height:30px;
+	background-color:rgba(104,18,222,1.00);
+	transition:all;
+	transition-duration:0.8s;
+	transition-timing-function:ease-in-out;
+}
+
+
+#mobile-nav-side {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:30px;
+	height:100vh;
+	background-color:rgba(104,18,222,1.00);
+	transition:all;
+	transition-duration:0.8s;
+	transition-timing-function:ease-in-out;
+}
+
+
+#open {
+	position:absolute;
+	top:0;
+	right:0;
+	height:20px;
+	width:20px;
+	background-color:rgba(223,163,21,1.00);
+	visibility:visible;
+	cursor:pointer;
+}
+#close {
+	position:absolute;
+	top:0;
+	right:0;
+	height:20px;
+	width:20px;
+	background-color:rgba(125,221,25,1.00);
+	visibility:hidden;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav role="navigation" id="mobile-nav">
+  <div id="open" onClick="runMobiMenu()"></div>
+  <div id="close" onClick="closeMobiMenu()"></div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+// JavaScript Document
+
+function nameGoesHere() {
+"use strict";
+/* Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions. */
+var count=1;
+
+var counter=setInterval(timer, 100); //1000 will  run it every 1 second, so 100 is 1/10
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+    clearInterval(counter);
+    // Statement(s) go here
+    // http://www.w3schools.com/js/js_statements.asp
+	document.getElementById("mobile-nav").style.height = "300px";
+    return;
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+function runMobiMenu() {
+"use strict";
+/* Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions. */
+var count=1;
+
+var counter=setInterval(timer, 100); //1000 will  run it every 1 second, so 100 is 1/10
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+    clearInterval(counter);
+    	document.getElementById("mobile-nav").style.width = "100%";
+	document.getElementById("mobile-nav").style.backgroundColor = "rgba(104,18,222,0.50)";
+	document.getElementById("open").style.visibility = "hidden";
+	document.getElementById("close").style.visibility = "visible";
+    return;
+  }
+}
+}
+
+
+
+
+
+
+
+function closeMobiMenu() {
+"use strict";
+/* Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions. */
+var count=1;
+
+var counter=setInterval(timer, 100); //1000 will  run it every 1 second, so 100 is 1/10
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+    clearInterval(counter);
+    	document.getElementById("mobile-nav").style.width = "30px";
+	document.getElementById("mobile-nav").style.backgroundColor = "rgba(104,18,222,1.00)";
+	document.getElementById("open").style.visibility = "visible";
+	document.getElementById("close").style.visibility = "hidden";
+    return;
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function runMobiMenu() {
+"use strict";
+/* Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions. */
+var count=1;
+
+var counter=setInterval(timer, 100); //1000 will  run it every 1 second, so 100 is 1/10
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+    clearInterval(counter);
+    document.getElementById("mobile-nav-side").style.width = "100%";
+	document.getElementById("mobile-nav-side").style.height = "100vh";
+	document.getElementById("mobile-nav-side").style.backgroundColor = "rgba(104,18,222,1.00)";
+	document.getElementById("open").style.visibility = "hidden";
+	document.getElementById("close").style.visibility = "visible";
+    return;
+  }
+}
+}
+
+
+
+
+
+
+
+function runMobiMenu() {
+"use strict";
+
+  {
+    document.getElementById("mobile-nav-side").style.width = "100%";
+	document.getElementById("mobile-nav-side").style.height = "100vh";
+	document.getElementById("mobile-nav-side").style.backgroundColor = "rgba(104,18,222,1.00)";
+	document.getElementById("open").style.visibility = "hidden";
+	document.getElementById("close").style.visibility = "visible";
+    return;
+  }
+}

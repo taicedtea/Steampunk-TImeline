@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+}
+/*.hold{
+	margin: 10vh 0 0 0;
+}*/
+.navBar{
+	display: fixed;
+	width: 100vw;
+	height: 10vh;
+	margin: 0;
+	padding: 0;
+	background-color: antiquewhite;
+}
+.timeline{
+	width: 90%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+.slider {
+  font-family: sans-serif;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  display: flex;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+	margin: 10vh 0 0 0;
+	padding: 0;
+}
+section {
+	min-width: 100vw;
+	height: 85vh;
+	padding: 1rem;
+	margin: 0;
+	scroll-snap-align: center;
+	text-align: center;
+	position: relative;
+}
+section:nth-child(even){
+  background-color: #87EA87;
+}
+section:nth-child(odd){
+  background-color: #59A4AD;
+}
+
